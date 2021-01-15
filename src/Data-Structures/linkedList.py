@@ -62,6 +62,9 @@ class LinkedList:
             else:
                 self.head = self.head.next
             return
+        elif index == self.length - 1:
+            self.pop()
+            return
 
         current_node = self.head
         for _ in range(index - 1):
